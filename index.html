@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ポルトガルの街歩きを想像する、架空の旅プランナー。">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>Porto Pocket | 小さな旅のプランナー</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#top" aria-label="Porto Pocket ホーム"><span class="brand-icon">✳</span><span>PORTO <b>POCKET</b><small>A LITTLE TRAVEL PLANNER</small></span></a>
+    <a class="header-link" href="#about">このサイトについて <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> AN IMAGINARY DAY IN PORTUGAL</p>
+        <h1 id="hero-title">いい旅は、<br><em>余白</em>からはじまる。</h1>
+        <p class="hero-text">予定を詰め込むより、今の気分に合うひとときを。ポルトを舞台に、あなただけの小さな旅のアイデアを見つけましょう。</p>
+        <a class="primary-link" href="#planner">旅のアイデアをつくる <span>↗</span></a>
+        <p class="hero-foot">NO SIGN-UP <i>·</i> ABOUT 1 MIN <i>·</i> DEMO</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="art-caption">A LITTLE<br>PORTUGAL<br><span>POSTCARD Nº 01</span></div>
+        <div class="hills hill-back"></div><div class="hills hill-front"></div>
+        <div class="river"></div><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div><div class="building b4"></div>
+        <div class="art-label">PORTO, PORTUGAL <span>✳</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="wrap">SLOW MOMENTS <span>✳</span> LOCAL COLOURS <span>✳</span> OPEN HORIZONS <span>✳</span> MAKE ROOM FOR CURIOSITY</div></div>
+
+    <section class="planner-section" id="planner">
+      <div class="wrap planner-grid">
+        <div class="section-intro"><p class="eyebrow">01 / YOUR LITTLE PLAN</p><h2>今日は、どんな<br>気分ですか？</h2><p>旅の過ごし方と使える時間を選ぶと、架空の街歩きプランをご提案します。</p><div class="hand-note">Take your time <span>↘</span></div></div>
+        <form id="planner-form" class="planner-card">
+          <div class="card-top"><span>MAKE IT YOURS</span><span>01 — 02</span></div>
+          <fieldset><legend><span class="step-num">01</span> 興味のある過ごし方</legend><div class="choices" id="mood-choices">
+            <label><input type="radio" name="mood" value="culture" checked><span><b>街と文化</b><small>建物や風景を楽しむ</small></span></label>
+            <label><input type="radio" name="mood" value="food"><span><b>食と休憩</b><small>ゆっくり味わう</small></span></label>
+            <label><input type="radio" name="mood" value="creative"><span><b>手しごと</b><small>ものづくりに触れる</small></span></label>
+          </div></fieldset>
+          <fieldset><legend><span class="step-num">02</span> 使える時間</legend><div class="time-choices">
+            <label><input type="radio" name="time" value="short" checked><span>1〜2時間</span></label>
+            <label><input type="radio" name="time" value="long"><span>半日くらい</span></label>
+          </div></fieldset>
+          <button class="submit" type="submit">プランを見る <span>↗</span></button>
+          <p class="form-note">選択内容はこのブラウザー内で処理され、送信・保存されません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="result" class="result-section wrap" aria-live="polite" hidden>
+      <div class="result-heading"><div><p class="eyebrow">02 / YOUR ITINERARY</p><h2>あなたの小さな旅</h2><p id="result-summary"></p></div><button class="text-button" id="reset" type="button">選び直す ↗</button></div>
+      <div id="result-cards" class="result-cards"></div>
+      <p class="disclaimer">これは実演用の架空プランです。場所、営業時間、移動時間、営業状況は実在情報として確認していません。実際の旅行には使用しないでください。</p>
+    </section>
+
+    <section class="about wrap" id="about"><div><p class="eyebrow">A NOTE FROM US</p><h2>旅を考える時間も、<br>旅の一部。</h2></div><div><p>Porto Pocketは、Web制作とAI活用を紹介するための架空のデモです。特定の事業者やイベントとは関係ありません。</p><p>表示される場所やプランはすべて創作です。予約、決済、個人情報の収集は行いません。</p></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div class="footer-brand">PORTO POCKET <span>✳</span></div><p>AN IMAGINARY TRAVEL PLANNER<br>MADE FOR EXPLORATION, NOT BOOKING.</p><a href="#top">BACK TO TOP ↑</a></div></footer>
+</body>
+</html>
